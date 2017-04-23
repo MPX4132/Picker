@@ -19,6 +19,8 @@
 
 <script src="scripts.js"></script>
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
 </head>
 	<body>
 		<!-- Navigation Bar -->
@@ -57,7 +59,22 @@
 					<!-- Right navigation bar segment -->
 					<div class="navbar-right">
 						<!--<button class="btn btn-primary navbar-btn pull-left" data-toggle="collapse" data-target="#settings" aria-expanded="false">Settings</button>-->
-						<p class="navbar-text" id="turn-display">[&beta;&epsilon;&tau;&alpha;]</p>
+						<p class="navbar-text">[&beta;&epsilon;&tau;&alpha;]</p>
+					</div>
+				</div>
+			</div>
+		</nav>
+		
+		<!-- Navigation Bar -->
+		<nav class="navbar navbar-inverse navbar-fixed-bottom">
+			<div class="container-fluid">
+
+				<!-- Navigation links and other content will be collapsable when in mobile devices -->
+				<div class="collapse navbar-collapse" id="navbar-primary">
+
+					<!-- Right navigation bar segment -->
+					<div class="navbar-right">
+						<button class="btn btn-success navbar-btn" id="entries-roll" style="margin-right: 8px;">Randomize</button>
 					</div>
 				</div>
 			</div>
@@ -107,10 +124,6 @@
 				<div class="entries" id="entries"></div>
 				<div class="btn-group btn-group-justified">
 					<a class="btn btn-default" id="entries-add">Add Entry</a>
-				</div>
-				<br>
-				<div class="btn-group btn-group-justified">
-					<a class="btn btn-success" id="entries-roll">Roll</a>
 				</div>
 			</section>
 		</article>
