@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- Bootstrap 3 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Bootstrap 3 Theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Custom Styles -->
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+<!-- JQuery 3 -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+<!-- Bootstrap 3 Script -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="scripts.js"></script>
+
+</head>
+	<body>
+		<!-- Navigation Bar -->
+		<nav class="navbar navbar-inverse navbar-static-top">
+			<div class="container-fluid">
+
+				<!-- The header below will only be visible on mobile -->
+				<header class="navbar-header">
+					<a class="navbar-brand" href="index.html">
+						<span>Picker</span>
+					</a>
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-primary">
+						<!-- "Toggle navigation" only visible on screen-readers -->
+						<span class="sr-only">Toggle navigation</span>
+
+						<!-- The spans below comprise the [mobile's] menu button three horizontal bars -->
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</header>
+
+				<!-- Navigation links and other content will be collapsable when in mobile devices -->
+				<div class="collapse navbar-collapse" id="navbar-primary">
+					
+					<!-- Left navigation bar segment -->
+					<div class="navbar-left">
+						<!--
+						<ul class="nav navbar-nav">
+							<li>
+								<a href="help.html">Help</a>
+							</li>
+						</ul>-->
+					</div>
+
+					<!-- Right navigation bar segment -->
+					<div class="navbar-right">
+						<!--<button class="btn btn-primary navbar-btn pull-left" data-toggle="collapse" data-target="#settings" aria-expanded="false">Settings</button>-->
+						<p class="navbar-text" id="turn-display">[&beta;&epsilon;&tau;&alpha;]</p>
+					</div>
+				</div>
+			</div>
+		</nav>
+		
+		<!--<article class="container-fluid collapse" id="settings">
+			<div>
+				<header>
+					<h3>Board Configuration</h3>
+				</header>
+				
+				<section class="well well-sm">
+					<header>
+						<h4>Player Units</h4>
+					</header>
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="btn-group btn-group-justified" role="group" id="setting-unit-count">
+								<div class="btn-group" role="group">
+									<button type="button" class="btn btn-default" data-decrement>&minus;</button>
+								</div>
+								<div class="btn-group" role="group">
+									<button type="button" class="btn btn-default" data-reset disabled>48 Available</button>
+								</div>
+								<div class="btn-group" role="group">
+									<button type="button" class="btn btn-default" data-increment>&plus;</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</article>-->
+
+		<template id="t-input-group">			
+			<div class="input-group">
+				<span class="input-group-addon">-</span>
+				<input type="text" class="form-control" placeholder="Entry name here...">
+				<span class="input-group-btn">
+					<button type="button" class="btn btn-danger">Remove</button>
+				</span>
+			</div>
+		</template>
+		
+		<article>
+			<section class="container">
+				<div class="entries" id="entries"></div>
+				<div class="btn-group btn-group-justified">
+					<a class="btn btn-default" id="entries-add">Add Entry</a>
+				</div>
+				<br>
+				<div class="btn-group btn-group-justified">
+					<a class="btn btn-success" id="entries-roll">Roll</a>
+				</div>
+			</section>
+		</article>
+		
+	</body>
+</html>
