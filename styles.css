@@ -1,3 +1,9 @@
 body div.entries > div.input-group {
 	margin-bottom: 20px;
 }
+
+@media only screen and (min-width : 480px) {	
+	body div.navbar-right>button:last-child {
+		margin-right: 8px;
+	}
+}

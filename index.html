@@ -30,7 +30,7 @@
 				<!-- The header below will only be visible on mobile -->
 				<header class="navbar-header">
 					<a class="navbar-brand" href="index.html">
-						<span>Picker</span>
+						<span>Randomizer</span>
 					</a>
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-primary">
 						<!-- "Toggle navigation" only visible on screen-readers -->
@@ -48,17 +48,17 @@
 					
 					<!-- Left navigation bar segment -->
 					<div class="navbar-left">
-						<!--
 						<ul class="nav navbar-nav">
-							<li>
-								<a href="help.html">Help</a>
-							</li>
-						</ul>-->
+						</ul>
 					</div>
 
 					<!-- Right navigation bar segment -->
 					<div class="navbar-right">
-						<!--<button class="btn btn-primary navbar-btn pull-left" data-toggle="collapse" data-target="#settings" aria-expanded="false">Settings</button>-->
+						<ul class="nav navbar-nav">
+							<li>
+								<a onclick="alert('It\'s just a randomizer...');">About</a>
+							</li>
+						</ul>
 						<p class="navbar-text">[&beta;&epsilon;&tau;&alpha;]</p>
 					</div>
 				</div>
@@ -68,14 +68,9 @@
 		<!-- Navigation Bar -->
 		<nav class="navbar navbar-inverse navbar-fixed-bottom">
 			<div class="container-fluid">
-
-				<!-- Navigation links and other content will be collapsable when in mobile devices -->
-				<div class="collapse navbar-collapse" id="navbar-primary">
-
-					<!-- Right navigation bar segment -->
-					<div class="navbar-right">
-						<button class="btn btn-success navbar-btn" id="entries-roll" style="margin-right: 8px;">Randomize</button>
-					</div>
+				<!-- Right navigation bar segment -->
+				<div class="navbar-right">
+					<button class="btn btn-success navbar-btn pull-right" id="entries-roll">Randomize</button>
 				</div>
 			</div>
 		</nav>
